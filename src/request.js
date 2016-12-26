@@ -55,7 +55,7 @@ define(function (require) {
         ajaxOption.cache = true;  // 如果为假则ajax执行每次请求的url都会携带参数`_`
 
         // 增加reqId
-        var reqId = fc.util.uid();
+        var reqId = fc.util.guid();
         ajaxOption.urlParam.reqId = reqId;
 
         var extraData = {
